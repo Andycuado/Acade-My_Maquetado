@@ -1,0 +1,40 @@
+/*Este archivo css es un footer global 
+para usarse en los archivos html que lo necesiten*/
+
+footer {
+    background: #3464ccd2;
+    color: white;
+    padding: 20px;
+    display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-wrap: wrap; /* Evita que se descuadre en pantallas pequeñas*/
+}
+
+footer nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+footer nav p {
+    padding: 0 50px;
+    margin-right: 105px;
+}
+
+footer nav a {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.4s;
+
+}
+
+footer nav a:hover {
+    color: rgba(82, 0, 169, 0.651);
+}

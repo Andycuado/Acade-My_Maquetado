@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita que haya un scroll horizontal(X)*/
+}
+
+/* Esconde la barra de scroll vertical*/
+    body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Banner */
+.bannerCursos { 
+    background-image: url("/IMG/all_cursos.jpg");
+    background-size:cover; /* Hace que cubra toda la pantalla*/
+    background-position: center; 
+    background-attachment:fixed; /* La imagen se queda fija a la hora del desplazamiento*/
+}
+
+.padre {
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+
+.banner {
+    background-color: #3464ccd2;
+    color: #ffffffd2;
+    text-align: center;
+    display: inline-block; /* La caja solo ocupa lo que mide el texto */
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.banner h2 {
+    font-weight: bold;
+}
+
+/* Contenido*/
+.descripcion {
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    background: #f9f9f9;
+}
+
+.box-descripcion {
+    max-width: 800%;
+    text-align: center;
+}
+
+.box-descripcion h2 {
+    margin-bottom: 40px;
+    color: #3464ccd2;
+}
+
+.box-descripcion p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    padding-bottom: 25px;
+}
+
+.box-descripcion ul {
+    color: #3464ccd2;
+    text-align: left;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+
+.box-descripcion button {
+    color: #fff;
+    background-color: #3464ccd2;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.4s;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.box-descripcion button:hover {
+    background: rgba(82, 0, 169, 0.651);
+    color: #fff;
+}
+
+.box-descripcion p a {
+    color: #3464ccd2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.box-descripcion p a:hover {
+    text-decoration: none;
+    color: rgba(82, 0, 169, 0.651)
+}

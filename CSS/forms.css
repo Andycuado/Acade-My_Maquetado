@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    display: flex;
+        flex-direction: column; /* Organizar header, main y footer en columna */
+        min-height: 100vh; /* Ocupar toda la altura de la pantalla */
+}
+
+.banner {
+    background-image: url("/IMG/log-reg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* centro horizontal */
+    align-items: center;     /* centro vertical */
+    padding: 20px;
+}
+
+.formulario {
+    background: rgba(240, 240, 240, 0.863);
+    padding: 30px;
+    border: 1px solid #c3c2c2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;   /* Ancho fijo */
+    max-width: 90%;
+}
+
+.formulario h2 {
+    padding-bottom: 25px;
+    text-align: center;
+    color: #3464ccd2; 
+}
+
+.formulario label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.formulario input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c3c2c2;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.formulario input:focus {
+    border-color: rgba(82, 0, 169, 0.651);
+    outline: none;
+    box-shadow: 0 0 5px rgba(82, 0, 169, 0.651);
+}
+
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background: #3464ccd2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.formulario button:hover {
+    background: rgba(82, 0, 169, 0.651)
+}
+
+.formulario a {
+    color: white;
+    text-decoration: none;
+}
+
+.formulario p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.formulario p a {
+    color: #3464ccd2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+
+}
+
+.formulario p a:hover {
+    text-decoration: none;
+    color: rgba(82, 0, 169, 0.651)
+}

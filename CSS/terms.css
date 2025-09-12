@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Esconde la barra de scroll vertical*/
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.text_terms {
+    background: rgba(240, 240, 240, 0.699);
+    padding: 30px;
+    border: 1px solid #c3c2c2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto; 
+    max-width: 900px;
+}
+
+.text_terms h2 {
+    padding-bottom: 25px;
+    text-align: center;
+}

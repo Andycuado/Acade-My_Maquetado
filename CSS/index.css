@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita que haya un scroll horizontal(X)*/
+}
+
+/* Esconde la barra de scroll vertical*/
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Banner */
+.banner { 
+    background-image: url("/IMG/banner.jpg");
+    background-size:cover; /* Hace que cubra toda la pantalla*/
+    background-position: center; 
+    background-attachment:fixed; /* La imagen se queda fija a la hora del desplazamiento*/
+}
+
+.banner { 
+    color: #3464ccd2;
+    text-align: center;
+    padding: 80px 30px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.banner button {
+    background: #fff;
+    color: #3464ccd2;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.4s;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.banner button:hover {
+    background: rgba(82, 0, 169, 0.651);
+    color: #fff;
+}
+
+/* Cursos */
+.lista-cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.cursos {
+    padding: 50px 30px;
+    background: #fff;
+    text-align: center;
+}
+
+.cursos h2 {
+    color: #3464ccd2;
+    margin-bottom: 30px;
+}
+
+.curso {
+    background: rgba(240, 240, 240, 0.699);
+    border: 1px solid #c3c2c2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.curso:hover {
+    transform: translateY(-10px);
+    border-color: #3464ccd2;
+    box-shadow: 0 0 5px rgba(82, 0, 169, 0.651);
+
+}
+
+.curso h3 {
+    color: #3464ccd2;
+    margin-bottom: 10px;
+}
+
+.curso button {
+    background: #3464ccd2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.curso button:hover {
+    background: rgba(82, 0, 169, 0.651);
+}
+
+/* Testimonios */
+.testimonios {
+    background-image: url("/IMG/banner.jpg");
+    background-size:cover;
+    background-position: center; 
+    background-attachment:fixed;
+    font-weight: bold;
+}
+
+.testimonios {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonios h2 {
+    color: #3464ccd2;
+    margin-bottom: 20px;
+}
+
+.testimonios h4 {
+    font-style: italic;
+    padding-left: 15px;
+    color: #3464ccd2;
+}

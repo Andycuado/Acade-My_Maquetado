@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="icon" href="/IMG/logosena.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/forms.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-contenedor">
+            <img src="/IMG/logosena.png" alt="img" width="90" height="80">
+            <div class="barra"></div>
+            <div class="nombre">Acade-My</div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="/HTML/index.html">Inicio</a></li>
+                <li><a href="/HTML/cursos.html">Cursos</a></li>
+                <li><a href="https://portal.senasofiaplus.edu.co/">Ayuda y soporte ↗</a></li> <!--Redirige a SofíaPlus-->
+            </ul>
+        </nav>
+        <div class="reg">
+            <a href="/HTML/log.html">Iniciar sesión</a> | <a href="/HTML/reg.html">Registrarse</a>
+        </div>
+        </div>
+    </header>
+
+    <!-- Formulario de registro -->
+    <main class="banner">
+        <div class="formulario">
+            <form action="/HTML/log.html" method="get">
+                <h2>Registro</h2>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email-registro">Correo electrónico</label>
+                <input type="email" id="email-registro" name="email" required>
+
+                <label for="password-registro">Contraseña</label>
+                <input type="password" id="password-registro" name="password" required>
+
+                <label for="confirmar">Confirmar contraseña</label>
+                <input type="password" id="confirmar" name="confirmar" required>
+
+                <button type="submit">Registrarse</button>
+                <p>¿Ya tienes cuenta? <a href="/HTML/log.html">Inicia sesión</a></p>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <a href="/HTML/terms.html">Términos y condiciones</a>
+            <p>&copy; 2025 Acade-my - Todos los derechos reservados</p>
+            <a href="https://betowa.sena.edu.co/">Betowa ↗</a> <!--Redirige a la página Betowa-->
+        </nav>
+    </footer>
+
+</body>
+</html>

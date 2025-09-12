@@ -1,0 +1,145 @@
+/*Este archivo css es un header global 
+para usarse en los archivos html que lo necesiten*/
+
+header {
+    background: #3464ccd2; 
+    color: white;
+    padding: 15px 20px;
+    display: flex; /* Alinea elementos en una sola dirección: fila(row) o columna(column)*/
+        align-items: center;
+        justify-content: space-between;
+}
+
+header nav a {
+    display: inline-flex;
+        align-items: center;
+        line-height: 1;   /* Hace que la altura sea uniforme */
+        vertical-align: middle;
+}
+
+.logo-contenedor{
+    display: flex;
+        align-items: center;
+}
+
+.barra {
+    width: 2px;
+    height: 60px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nombre {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgba(82, 0, 169, 0.651);
+}
+
+/* Inicio de sesión o registro*/
+.reg {
+    margin-left: 98px;
+}
+
+.reg a {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+
+}
+
+.reg a:hover {
+    color: rgba(82, 0, 169, 0.651);
+}
+
+/* Perfil de usuario al iniciar sesión*/
+.user {
+    display: flex;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        margin-right: 10px;
+        margin-left: 154px;
+}
+
+.user img {
+    border-radius: 50%;
+}
+
+.username {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex; /* Sirve para ampliar el area del hover*/
+    align-items: center;
+}
+
+.username .arrow {
+  font-size: 0.7em; /* más pequeño que el texto */
+  margin-right: 5px; /* espacio entre el nombre y la flecha */
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* Menú oculto */
+.menu-drop { 
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0; /* Alineado al final del nombre*/
+    background: rgba(240, 240, 240, 0.758);
+    border-radius: 10px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+    min-width: 180px;
+}
+
+/* Links dentro del menú */
+.menu-drop li a {
+    display: block;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #3464ccd2; 
+    text-decoration: none;
+    transition: background 0.4s;
+}
+
+.menu-drop  li a:hover {
+    background: rgba(82, 0, 169, 0.651);
+    color: white;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover .menu-drop  {
+    display: block; /* Hace visible el menú al pasar el ratón */
+}
